@@ -10,6 +10,8 @@ wd_m = wd.groupby(per).agg(['mean', 'count'])
 wd_m_10 = wd[wd.DateTime.dt.month == 10]
 wd_m_10.to_csv("wd_m_10.csv", sep=',', encoding='utf-8')'''
 
+#hello
+
 # Data Analysis for month == 10: Diurnal Variation
 wd_m_10 = pd.read_csv('C:\\Users\\Sam Matuba\\Documents\\GitHub\\Microgrid\\components\\wind\\wd_m_10.csv', infer_datetime_format=True)
 wd_m_10['DateTime'] = pd.to_datetime(wd_m_10['DateTime'])
